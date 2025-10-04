@@ -9,7 +9,7 @@ app.use('/contact/*', cors())
 const fieldsToExtract = ['name', 'email', 'message', 'newField1', 'newField2', 'honeypot'];
 
 // Replace with your Discord webhook URL
-const discordWebhookUrl = 'YOUR_DISCORD_WEBHOOK_URL';
+const discordWebhookUrl = 'https://discord.com/api/webhooks/1418670919576064202/rLZYnlfWNl4qRZIIHCwJgGOUk_3kssjqZD6Y7Z1WV5uNjUpPLiXRFTDEca8o_-C-WTv1';
 
 app.post('/contact', async (c) => {
   const body = await c.req.parseBody();
